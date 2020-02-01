@@ -4,6 +4,7 @@ before:
   hooks:
     - go mod download
     - go generate ./...
+    - golangci-lint run
 builds:
   - env:
       #- CGO_ENABLED=0
